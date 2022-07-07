@@ -1,0 +1,49 @@
+html{
+    background: rgb(8, 8, 0) url(imagine.jpg) center center no-repeat;
+    color: rgb(246, 246, 246);
+    background-size: cover;
+}
+
+body{
+    display: grid;
+    margin: 0;
+    place-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;}
+    @media(min-width:500px){body{display: grid;}}
+
+    .container{
+width: 90%;
+margin: 2vh auto;
+background: rgba(0, 0, 0, 0.51);
+padding: 1rem;
+font-size:clamp(1rem, 2vw, 2rem);
+line-height: 1.5em;
+}
+@media(min-width:300px){.container{margin: 2vh;padding: 2rem;
+border-radius: 2rem;}}
+@media(min-width:500px){.container{margin: 7vw;padding: 3rem;}}
+
+header{ }
+.Motor{
+    display: block; width: 100px;height: auto;
+    margin:0 1em 0 0; border-radius: 50%;}
+    @media(min-width:380px){.Motor{float: left;}}
+    @media(min-width:930px){.Motor{width: clamp(130px, 14vw, 12rem);}}
+    .TitlulPaginii{ display: block; margin: 0;font-size: clamp(2rem,6vw,4rem);line-height: 1em;}
+    .DescriereaPrincipala{display: block;margin: 0.5em 0 1.5em;}
+    @media(min-width:500px){.DescriereaPrincipala{margin-bottom: 0.5em;}}
+main{ clear: both;}
+   .ListaLinkuri{display: block;margin: 0; padding: 0;border-top: 1px solid #fff;}
+   @media(min-width:1800px){.ListaLinkuri{display: grid;grid-template-columns: 1fr 1fr;}}
+   .ListaItem{display: block;margin: 0;padding: 0;border-bottom: 1px solid #fff;}
+        .ListaLink{display: block;padding: 0.5em;color: #fff;text-decoration: none;border-radius: 1rem;}
+        .ListaLink:hover{background: rgba(255, 255, 255, 0.842);color: #000;transition-duration: 0.55s ;}
+        .ListaTitlu,.ListaTitlu{display: block;margin: 0;padding: 0%;font-size: 1em; line-height: 1.5em;}
+          .ListaText{
+            white-space:nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
